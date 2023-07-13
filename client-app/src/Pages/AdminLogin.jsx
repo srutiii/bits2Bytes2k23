@@ -69,6 +69,7 @@ const AdminLogin = () => {
           });
           setOtp(data.verification);
           setIsLoggedIn(true);
+          document.cookie = cookie.serialize('token', data.verification);
         }
       } else {
         // Login failed.

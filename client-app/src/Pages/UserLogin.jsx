@@ -7,6 +7,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import OTPPage from "./Otp";
+import cookie from 'cookie';
 
 
 const UserLogin = () => {
@@ -70,6 +71,8 @@ const UserLogin = () => {
           });
           setOtp(data.verification);
           setIsLoggedIn(true);
+          document.cookie = cookie.serialize('token', data.verification);
+
         }
         // console.log("Successfull");
       } else {

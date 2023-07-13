@@ -5,7 +5,10 @@ import Particle from "../Components/Particle";
 import ViewGalleryImage from "../Components/ViewGalleryImage";
 import Footer from "../Components/Footer";
 
+
 const Gallery = () => {
+  
+
   const [childVisible, setChildVisible] = useState(false);
   const [img, setImg] = useState();
   const [tag, setTag] = useState(null);
