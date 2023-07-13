@@ -7,6 +7,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 import OTPPage from "./Otp";
+import cookie from 'cookie';
+
 
 
 const AdminLogin = () => {
